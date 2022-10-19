@@ -1,5 +1,5 @@
 import React from "react";
-import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 const SocialMedia = () => {
@@ -20,11 +20,11 @@ const SocialMedia = () => {
         <BsGithub />
       </a>
       <a
-        href="https://www.facebook.com/muhammadelhassan21"
+        href="https://wa.me/201557817439"
         target="_blank"
         rel="noreferrer"
       >
-        <FaFacebookF />
+        <BsWhatsapp />
       </a>
     </div>
   );
