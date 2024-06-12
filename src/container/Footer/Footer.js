@@ -49,10 +49,10 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "service_ezsl09b",
-        "template_3iwy4nb",
+        "service_lpzc7o3",
+        "template_gm3duoa",
         form.current,
-        "7VpnH1_WBnOvLHrt2"
+        "p01M3X0HbqITXdX3p"
       )
       .then(
         (result) => {
