@@ -29,12 +29,20 @@ const Header = () => {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Muhammad El Hassan</h1>
+              <h1 className="head-text">Mohamed Abouhashem</h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
+            <p className="p-text">Software Engineer</p>
             <p className="p-text">Front-end Web Developer</p>
-            <p className="p-text">Freelancer</p>
+            <a
+              class="download-cv-btn"
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/106vJIqBlcLFS1T-nF19IGStGyd6bA897/view?usp=sharing"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </motion.div>
