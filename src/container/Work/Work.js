@@ -3,8 +3,9 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { animate, motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+// import { urlFor, client } from "../../client";
 import "./Work.scss";
+import { workData } from "./data";
 
 const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -27,12 +28,13 @@ const Work = () => {
   };
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
-
-    client.fetch(query).then((data) => {
-      setWorks(data);
-      setFilterWork(data);
-    });
+    // const query = '*[_type == "works"]';
+    // client.fetch(query).then((data) => {
+    //   setWorks(data);
+    //   setFilterWork(data);
+    // });
+    setWorks(workData);
+    setFilterWork(workData);
   }, []);
 
   return (
@@ -41,7 +43,7 @@ const Work = () => {
         My Creative <span>Portfolio</span> section
       </h2>
       <div className="app__work-filter">
-        {["Freelancing", "Landing Page", "Web App", "React JS", "All"].map(
+        {["WordPress", "Landing Page", "Web App", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -63,7 +65,7 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={work.imgUrl} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
