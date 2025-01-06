@@ -21,12 +21,13 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="app__navbar-menu">
+      <div className={`app__navbar-menu`}>
         <HiMenuAlt4 onClick={() => setToggle(true)} />
-        {toggle && (
-          <motion.div
-            whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
+        {/* {toggle && ( */}
+          <div
+            className={`app__navbar-menu-content ${toggle ? "active" : ""}`}
+            // whileInView={{ x: [300, 0] }}
+            // transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
@@ -38,8 +39,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
-        )}
+          </div>
+        {/* )} */}
       </div>
     </nav>
   );

@@ -39,7 +39,7 @@ const Header = () => {
               class="download-cv-btn"
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/106vJIqBlcLFS1T-nF19IGStGyd6bA897/view?usp=sharing"
+              href="https://drive.google.com/file/d/173YV_5MVswG-a-pnPA5QiQot5C1BckQe/view?usp=sharing"
             >
               Download CV
             </a>
