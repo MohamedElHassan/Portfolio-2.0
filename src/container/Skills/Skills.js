@@ -5,51 +5,28 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./Skills.scss";
-const experienceWorks = [
-  {
-    year: "2020",
-    works: [
-      {
-        name: "Front-end Developer",
-        company: "Erthraqmy",
-        description: "I worked at Erthraqmy as a Front-end Web Developer",
-      },
-      {
-        name: "UI/UX",
-        company: "Google",
-        description: "I worked at Erthraqmy as a UI/UX Designer",
-      },
-    ],
-  },
-  {
-    year: "2022",
-    works: [
-      {
-        name: "Front-end Developer",
-        company: "Freelancer",
-        description: "I worked at Up-Work as a Front-end Web Developer",
-      },
-    ],
-  },
-];
+import { newExperiences, newSkills } from "./data";
+
 const Skills = () => {
-  const [experience, setExperience] = useState([]);
-  const [skills, setSkills] = useState([]);
+  const [experience, setExperience] = useState(newExperiences);
+  const [skills, setSkills] = useState(newSkills);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
+    // const query = '*[_type == "experiences"]';
+    // const skillsQuery = '*[_type == "skills"]';
 
-    client.fetch(query).then((data) => {
-      setExperience(data);
-    });
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
+    // client.fetch(query).then((data) => {
+    //   setExperience(data);
+    // });
+    // client.fetch(skillsQuery).then((data) => {
+    //   setSkills(data);
+    // });
+    setExperience(newExperiences);
+    setSkills(newSkills);
   }, []);
+
   return (
     <>
-      {/* {console.log(experience)} */}
       <h2 className="head-text">Skills & Experience</h2>
 
       <div className="app__skills-container">
@@ -65,7 +42,8 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+              {/* src={urlFor(skill.icon)} */}
+                <img src={skill.icon} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>

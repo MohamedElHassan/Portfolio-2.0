@@ -35,14 +35,14 @@ const Header = () => {
           <div className="tag-cmp app__flex">
             <p className="p-text">Software Engineer</p>
             <p className="p-text">Front-end Web Developer</p>
-            <a
+            {/* <a
               class="download-cv-btn"
               target="_blank"
               rel="noreferrer"
               href="https://drive.google.com/file/d/173YV_5MVswG-a-pnPA5QiQot5C1BckQe/view?usp=sharing"
             >
               Download CV
-            </a>
+            </a> */}
           </div>
         </div>
       </motion.div>
@@ -66,7 +66,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.redux, images.react2, images.sass].map((cirlce, index) => (
+        {[images.nextjs, images.react2, images.redux].map((cirlce, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={cirlce} alt="circle" />
           </div>
