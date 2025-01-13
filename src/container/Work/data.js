@@ -5,6 +5,8 @@ import gpt3 from "../../assets/works/gpt3.png";
 import gayekapp from "../../assets/works/gayekapp.png";
 import mazayaaltanfeez from "../../assets/works/mazayaaltanfeez.png";
 import millionideas from "../../assets/works/millionideas.png";
+import xeoneg from "../../assets/works/xeoneg.png";
+import aiImageGenerator from "../../assets/works/ai-image-saas.png";
 
 export const workData = [
   // {
@@ -17,12 +19,12 @@ export const workData = [
   //   tags: ["WordPress"],
   // },
   {
-    title: "My Old Portfolio",
-    description: "My Old Portfolio Website, That's was my first Portfolio",
-    projectLink: "https://mohamedelhassan.github.io/Portfolio/",
-    codeLink: "https://github.com/MohamedElHassan/Portfolio",
-    imgUrl: myOldPortfolio,
-    tags: ["Landing Page"],
+    title: "XEON E-commerce store",
+    description: "E-commerce application for Egyptian Clothing brand",
+    projectLink: "https://xeon-eg.com/",
+    codeLink: "",
+    imgUrl: xeoneg,
+    tags: ["React JS", "Web App"],
   },
   {
     title: "شركة المروج للشحن",
@@ -33,12 +35,12 @@ export const workData = [
     tags: ["React JS", "Web App"],
   },
   {
-    title: "GPT-3 Website",
-    description: "AI GPT-3 Website using React.js",
-    projectLink: "https://mohamedelhassan.github.io/gpt3_m7mdelhassan/",
-    codeLink: "https://github.com/MohamedElHassan/gpt3_m7mdelhassan",
-    imgUrl: gpt3,
-    tags: ["React JS"],
+    title: "AI Image Generator",
+    description: "AI Image Generator using Next.js",
+    projectLink: "https://imaginify-ai-image-generator.vercel.app/",
+    codeLink: "https://github.com/MohamedElHassan/Imaginify-AI-Image-Generator",
+    imgUrl: aiImageGenerator,
+    tags: ["Next JS"],
   },
   {
     title: "Gayk App",
@@ -64,6 +66,14 @@ export const workData = [
     projectLink: "https://milionideas.com/",
     codeLink: "#",
     imgUrl: millionideas,
+    tags: ["React JS"],
+  },
+  {
+    title: "GPT-3 Website",
+    description: "AI GPT-3 Website using React.js",
+    projectLink: "https://mohamedelhassan.github.io/gpt3_m7mdelhassan/",
+    codeLink: "https://github.com/MohamedElHassan/gpt3_m7mdelhassan",
+    imgUrl: gpt3,
     tags: ["React JS"],
   },
 ];
