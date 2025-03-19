@@ -21,7 +21,7 @@ export const workData = [
   // },
   {
     title: "Food Fight SA | مطعم فوود فايت",
-    description: "Food Fight SA Restaurant",
+    description: "Food Fight SA Restaurant Website",
     projectLink: "https://foodfightsa.com/",
     codeLink: "",
     imgUrl: foodfightsa,
