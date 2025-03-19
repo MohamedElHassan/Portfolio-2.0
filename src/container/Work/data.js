@@ -7,6 +7,7 @@ import mazayaaltanfeez from "../../assets/works/mazayaaltanfeez.png";
 import millionideas from "../../assets/works/millionideas.png";
 import xeoneg from "../../assets/works/xeoneg.png";
 import aiImageGenerator from "../../assets/works/ai-image-saas.png";
+import foodfightsa from "../../assets/works/foodfightsa.png";
 
 export const workData = [
   // {
@@ -18,6 +19,14 @@ export const workData = [
   //   imgUrl: zawayaAldar,
   //   tags: ["WordPress"],
   // },
+  {
+    title: "Food Fight SA | مطعم فوود فايت",
+    description: "Food Fight SA Restaurant",
+    projectLink: "https://foodfightsa.com/",
+    codeLink: "",
+    imgUrl: foodfightsa,
+    tags: ["React JS", "Web App", "Next JS"],
+  },
   {
     title: "XEON E-commerce store",
     description: "E-commerce application for Egyptian Clothing brand",
