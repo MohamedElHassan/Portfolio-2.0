@@ -8,6 +8,7 @@ import millionideas from "../../assets/works/millionideas.png";
 import xeoneg from "../../assets/works/xeoneg.png";
 import aiImageGenerator from "../../assets/works/ai-image-saas.png";
 import foodfightsa from "../../assets/works/foodfightsa.png";
+import elhampodium from "../../assets/works/elhampodium.png";
 
 export const workData = [
   // {
@@ -20,10 +21,18 @@ export const workData = [
   //   tags: ["WordPress"],
   // },
   {
+    title: "Elham Podium | ",
+    description: "Elham Podium Web app for interviews",
+    projectLink: "https://elhampodium.com/",
+    codeLink: "https://elhampodium.com/",
+    imgUrl: elhampodium,
+    tags: ["React JS", "Web App"],
+  },
+  {
     title: "Food Fight SA | مطعم فوود فايت",
     description: "Food Fight SA Restaurant Website",
     projectLink: "https://foodfightsa.com/",
-    codeLink: "",
+    codeLink: "https://foodfightsa.com/",
     imgUrl: foodfightsa,
     tags: ["React JS", "Web App", "Next JS"],
   },
