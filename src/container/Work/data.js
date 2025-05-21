@@ -9,7 +9,7 @@ import xeoneg from "../../assets/works/xeoneg.png";
 import aiImageGenerator from "../../assets/works/ai-image-saas.png";
 import foodfightsa from "../../assets/works/foodfightsa.png";
 import elhampodium from "../../assets/works/elhampodium.png";
-
+import tentHajj from "../../assets/works/tenthajj.png"
 export const workData = [
   // {
   //   title: "شركة زوايا الدار العقارية",
@@ -21,7 +21,15 @@ export const workData = [
   //   tags: ["WordPress"],
   // },
   {
-    title: "Elham Podium | ",
+    title: "Tent Hajj Project Backend | مشروع API إدارة انشطة الحجاج",
+    description: "مشروع قوي يهدف الى تدريب الشباب المتطوع في خدمه حجيج بيت الله الحرام",
+    projectLink: "https://taqatshbabsa.com/",
+    codeLink: "https://taqatshbabsa.com/",
+    imgUrl: tentHajj,
+    tags: ["React JS", "Web App"],
+  },
+  {
+    title: "Elham Podium | إلهام بودكاست",
     description: "Elham Podium Web app for interviews",
     projectLink: "https://elhampodium.com/",
     codeLink: "https://elhampodium.com/",
